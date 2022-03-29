@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #111517;
+  --background-color: #f2f2f2;
+  --main-color: #fff;
+  --bg-color: #fff;
+  --content-color: ;
+}
+
+.dark {
+  --text-color: #fff;
+  --background-color: #202c36;
+  --main-color: #2b3844;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans";
+}
+
+html {
+  height: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.site-header {
+  background-color: var(--main-color);
+  padding-top: 23px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0562443);
+  padding-bottom: 24px;
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--text-color);
+  font-size: 24px;
+  line-height: 32.74px;
+}
+
+.darkmode {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.82px;
+}
+
+.darkmode::before {
+  content: url("../img/Path.svg");
+  margin-right: 10.5px;
+  display: inline-block;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  margin-top: 5px;
+  background-color: var(--background-color);
+  padding-top: 48px;
+}
+
+.global-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.global-info-search {
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+}
+
+.global-info-search-input {
+  color: var(--text-color);
+  background-color: var(--main-color);
+  border: none;
+  padding: 18px 270px 18px 74px;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.global-info-search-input {
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 32px 16px;
+}
+
+.select-choice {
+  padding: 18px 77px 18px 24px;
+  border: none;
+  color: var(--text-color);
+  background-color: var(--main-color);
+}
+
+.country-info-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country-info-link {
+  text-decoration: none;
+}
+
+.country-info {
+  width: 264px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  margin-bottom: 75px;
+}
+
+.country-info:hover {
+  background-color: var(--background-color);
+}
+
+.country-info:active {
+  background-color: var(--main-color);
+}
+
+.country-info:not(:nth-child(4n)) {
+  margin-right: 73px;
+}
+
+.country-info-img {
+  border-radius: 5px;
+}
+
+.country-info-list {
+  list-style: none;
+}
+
+.country-info-item {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.country-name-item {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 16px;
+}

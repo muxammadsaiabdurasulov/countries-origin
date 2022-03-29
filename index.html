@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+     <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+     <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="site-header">
+        <div class="header-container container">
+            <a class="header-logo" href="#">
+                <h2>Where in the world?</h2>
+            </a>
+    
+            <a href="#" id="darkmode-button">
+                <i class="fa-solid fa-moon"></i>
+                DarkMode
+            </a>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main class="main-content">
+        <div class="container">
+            <div class="global-info">
+                    <form class="global-search" action="">
+                        <input id="search-input" type="text" placeholder="Search for a country" aria-label="Search for a country" required autocomplete="off">
+                    </form>
+                    <select name="Filter by region" id="select">
+                        <option value="Filter by Region">Filter by Region</option>
+                        <option value="Africa">Africa</option>
+                        <option value="America">America</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </div>
+                <div class="countries"></div>
+            </div>
+
+    </main>
+    <!-- MAIN END -->
+
+    <div class="overlay hidden">Loading...</div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+    <script src="about/about.js"></script>
+</body>
+</html>
