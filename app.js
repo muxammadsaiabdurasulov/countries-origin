@@ -26,15 +26,17 @@ async function sendReq(url) {
 const showContent = (countries)=> {
     overlay.classList.add('hidden')
     countries.forEach((country)=> {
+        console.log(country)
+        const { name, flags, population, region, capital } = country
         const countryDiv = document.createElement('div')
         countryDiv.classList.add('country')
         countryDiv.innerHTML = `
-            <a href="./about/about.html?name=${country.name.common}">
-                <img src=${country.flags.png} alt="country flag"/>
-                <h4 class="country-info country-name">${country.name.common}</h4>
-                <p class="country-info country-population"><span class="bold-name">Population:</span> ${country.population}</p>
-                <p class="country-info country-region"><span class="bold-name">Region:</span> ${country.region}</p>
-                <p class="country-info country-capital"><span class="bold-name">Capital:</span> ${country.capital == undefined ? "No capital" : country.capital[0]}</p>
+            <a href="./about/about.html?name=${name.common}">
+                <img src=${flags.png} alt="country flag"/>
+                <h4 class="country-info country-name">${name.common}</h4>
+                <p class="country-info country-population"><span class="bold-name">Population:</span> ${population}</p>
+                <p class="country-info country-region"><span class="bold-name">Region:</span> ${region}</p>
+                <p class="country-info country-capital"><span class="bold-name">Capital:</span> ${capital == undefined ? "No capital" : capital[0]}</p>
             </a>`
 
         countriesEl.appendChild(countryDiv)
